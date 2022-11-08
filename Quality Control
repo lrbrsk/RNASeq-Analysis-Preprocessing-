@@ -1,3 +1,6 @@
+#If multiple sequencing runs, merge files using:
+cat file1 file2 > filemerged
+
 #Download FASTQC
 wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip
 
