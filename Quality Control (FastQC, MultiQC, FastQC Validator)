@@ -1,0 +1,20 @@
+#Download FASTQC
+wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.5.zip
+
+#Unzip FASTQC
+unzip fastqc_v0.11.5.zip
+
+#Activate JAVA
+module load apps/java
+
+#Check the version 
+java -version
+
+#cd to FASTQC folder, change the permission in the folder, either manually or 
+chmod 755 fastqc
+
+#Export path 
+export PATH=$PATH:/fastdata/USER/FastQC
+
+#Running fastqc on files (whilst in the folder that fastqc command is located):
+fastqc /fastdata/USER/'PATHTOFILES'
